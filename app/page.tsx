@@ -61,77 +61,97 @@ export default function Home() {
 
   const scheduleDay1 = [
     {
-      time: '8:00 AM',
-      title: 'Registration & Texas-Style Breakfast',
-      description: 'Check-in, networking, and local breakfast tacos',
-    },
-    {
       time: '9:00 AM',
-      title: 'Opening Keynote: AI in the Lone Star State',
-      description: 'The unique advantages and opportunities for AI in Texas',
+      title: 'Breakfast & Coffee',
+      description: 'Start your day with networking and Texas-style breakfast',
     },
     {
       time: '10:00 AM',
+      title: 'Kickoff Keynote',
+      description: 'Setting the stage for AI innovation in Texas',
+    },
+    {
+      time: '11:00 AM',
       title: 'Track Sessions Begin',
-      description: 'Split into AI Today (current implementations) and AI Tomorrow (future vision)',
+      description: 'Split into Builder (Software) and Business (Real World AI) tracks',
     },
     {
       time: '12:00 PM',
-      title: 'Lunch & Vendor Fair',
-      description: 'Explore cutting-edge AI solutions from Texas companies',
+      title: 'Lunch',
+      description: 'Networking lunch with attendees and speakers',
+    },
+    {
+      time: '1:00 PM',
+      title: 'Big Panel: Texas Research Labs',
+      description: 'Applied research at UT Austin, Rice, A&M, and more',
     },
     {
       time: '2:00 PM',
-      title: 'Industry Deep Dives',
-      description: 'Energy, Manufacturing, Agriculture, and Logistics AI applications',
+      title: 'Track Session 3',
+      description: 'Deep dive sessions in both Builder and Business tracks',
+    },
+    {
+      time: '3:00 PM',
+      title: 'Track Session 4 & Vendor Showcase',
+      description: 'Continued learning and vendor demonstrations',
     },
     {
       time: '4:00 PM',
-      title: 'Interactive Workshops',
-      description: 'Hands-on sessions with AI tools and platforms',
+      title: 'Track Session 5 & Vendor Showcase',
+      description: 'Final afternoon sessions and vendor interactions',
     },
     {
-      time: '6:00 PM',
-      title: 'VIP Dinner (Optional)',
+      time: '5:00 PM',
+      title: 'Happy Hour Event',
+      description: 'Unwind and network with fellow AI enthusiasts',
+    },
+    {
+      time: '7:00 PM',
+      title: 'Curated Dinner',
       description: 'Exclusive dinner with speakers and industry leaders',
     },
   ]
 
   const scheduleDay2 = [
     {
-      time: '8:30 AM',
-      title: 'Day 2 Welcome & Coffee',
-      description: 'Energize for another day of AI insights',
-    },
-    {
       time: '9:00 AM',
-      title: 'Panel: Physical World AI',
-      description: 'How AI is transforming tangible industries in Texas',
+      title: 'Day 2 Welcome & Coffee',
+      description: 'Energize for another day of AI insights and networking',
     },
     {
-      time: '10:30 AM',
-      title: 'Startup Showcase',
-      description: 'Texas AI startups pitch their innovations',
+      time: '10:00 AM',
+      title: 'Main Keynote',
+      description: 'Visionary address on the future of AI in Texas',
+    },
+    {
+      time: '11:00 AM',
+      title: 'Track 3 Sessions',
+      description: 'Advanced topics and specialized sessions',
     },
     {
       time: '12:00 PM',
       title: 'Networking Lunch',
-      description: 'Connect with fellow AI practitioners',
+      description: 'Connect with fellow AI practitioners and speakers',
+    },
+    {
+      time: '1:00 PM',
+      title: 'Track 3 Sessions Continue',
+      description: 'Deep dive into specialized AI applications',
     },
     {
       time: '2:00 PM',
-      title: 'Future of Work in Texas',
-      description: 'Preparing the Texas workforce for AI integration',
+      title: 'Interactive Sessions',
+      description: 'Hands-on workshops and collaborative problem-solving',
     },
     {
-      time: '3:30 PM',
+      time: '3:00 PM',
       title: 'Closing Keynote & Awards',
       description: 'Celebrating Texas AI achievements and looking ahead',
     },
     {
-      time: '5:00 PM',
-      title: 'Networking Reception',
-      description: 'Conclude with Texas hospitality and connections',
+      time: '4:00 PM',
+      title: 'Final Networking Reception',
+      description: 'Conclude with Texas hospitality and lasting connections',
     },
   ]
 
@@ -362,7 +382,7 @@ export default function Home() {
             <span className="text-sm font-semibold text-primary uppercase tracking-wide">Conference Tracks</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-foreground">Two Tracks, One Vision</h2>
             <p className="text-xl text-muted-foreground">
-              Choose your path or mix and match between practical implementations and future possibilities
+              Choose your path or mix and match between builders and business leaders
             </p>
           </div>
 
@@ -371,59 +391,59 @@ export default function Home() {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-primary/90" />
               <CardHeader className="text-center pt-10">
                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Brain className="h-10 w-10 text-primary" />
+                  <Cpu className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="text-2xl font-semibold text-foreground">AI Today</CardTitle>
-                <CardDescription className="text-lg text-muted-foreground">Current Implementations</CardDescription>
+                <CardTitle className="text-2xl font-semibold text-foreground">Track 1 - Builder</CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">Software & AI Development</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Real-world case studies from Texas companies</span>
+                    <span className="text-sm text-muted-foreground">AI/ML model development and deployment</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Practical implementation strategies</span>
+                    <span className="text-sm text-muted-foreground">Software engineering best practices</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">ROI analysis and business metrics</span>
+                    <span className="text-sm text-muted-foreground">Technical deep-dives and hands-on workshops</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Tools and platforms you can use now</span>
+                    <span className="text-sm text-muted-foreground">Infrastructure and scaling strategies</span>
                   </li>
                 </ul>
               </CardContent>
             </Card>
 
             <Card className="group relative overflow-hidden hover:shadow-2xl transition-all duration-300 border-0 bg-card">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary to-secondary/80" />
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-destructive to-destructive/80" />
               <CardHeader className="text-center pt-10">
-                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-secondary/10 to-secondary/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Sparkles className="h-10 w-10 text-secondary" />
+                <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-destructive/10 to-destructive/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <Building2 className="h-10 w-10 text-destructive" />
                 </div>
-                <CardTitle className="text-2xl font-semibold text-foreground">AI Tomorrow</CardTitle>
-                <CardDescription className="text-lg text-muted-foreground">Future Developments</CardDescription>
+                <CardTitle className="text-2xl font-semibold text-foreground">Track 2 - Business</CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">AI in the Real World</CardDescription>
               </CardHeader>
               <CardContent className="pb-8">
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Emerging AI technologies and research</span>
+                    <CheckCircle2 className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Physical world AI applications</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">5-10 year industry transformation vision</span>
+                    <CheckCircle2 className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Industry transformation case studies</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Preparing for AI-driven disruption</span>
+                    <CheckCircle2 className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">Business strategy and implementation</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-secondary mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Investment opportunities and trends</span>
+                    <CheckCircle2 className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-muted-foreground">ROI analysis and market opportunities</span>
                   </li>
                 </ul>
               </CardContent>
@@ -522,6 +542,102 @@ export default function Home() {
                 ))}
               </div>
             </div>
+          </div>
+
+          <div className="mt-16">
+            <h3 className="text-2xl font-semibold mb-8 text-center">Detailed Track Breakdown</h3>
+            <div className="grid lg:grid-cols-2 gap-8">
+              <Card className="overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-primary/10 to-primary/5">
+                  <CardTitle className="flex items-center gap-2">
+                    <Cpu className="h-5 w-5 text-primary" />
+                    Track 1 - Builder (Software)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="space-y-1">
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">11:00 AM</span>
+                      <span className="text-sm text-muted-foreground">Session 1: AI/ML Fundamentals</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">2:00 PM</span>
+                      <span className="text-sm text-muted-foreground">Session 2: Model Development</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">3:00 PM</span>
+                      <span className="text-sm text-muted-foreground">Session 3: Deployment Strategies</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">4:00 PM</span>
+                      <span className="text-sm text-muted-foreground">Session 4: Infrastructure & Scaling</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4">
+                      <span className="font-medium">Day 2</span>
+                      <span className="text-sm text-muted-foreground">Advanced Implementation</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden">
+                <CardHeader className="bg-gradient-to-r from-destructive/10 to-destructive/5">
+                  <CardTitle className="flex items-center gap-2">
+                    <Building2 className="h-5 w-5 text-destructive" />
+                    Track 2 - Business (AI in Real World)
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="space-y-1">
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">11:00 AM</span>
+                      <span className="text-sm text-muted-foreground">Session 1: Industry Applications</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">2:00 PM</span>
+                      <span className="text-sm text-muted-foreground">Session 2: Business Strategy</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">3:00 PM</span>
+                      <span className="text-sm text-muted-foreground">Session 3: Case Studies</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4 border-b border-border/50">
+                      <span className="font-medium">4:00 PM</span>
+                      <span className="text-sm text-muted-foreground">Session 4: ROI & Implementation</span>
+                    </div>
+                    <div className="flex items-center justify-between p-4">
+                      <span className="font-medium">Day 2</span>
+                      <span className="text-sm text-muted-foreground">Future Applications</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <Card className="mt-8 bg-gradient-to-r from-accent/5 to-secondary/5">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2 justify-center">
+                  <MessageSquare className="h-5 w-5 text-accent" />
+                  Interactive Sessions & Special Events
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-3 gap-6 text-center">
+                  <div>
+                    <h4 className="font-semibold mb-2">Research Panel</h4>
+                    <p className="text-sm text-muted-foreground">Texas Research Labs: UT Austin, Rice, A&M applied research</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Vendor Showcase</h4>
+                    <p className="text-sm text-muted-foreground">Live demonstrations from leading AI solution providers</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold mb-2">Interactive Workshops</h4>
+                    <p className="text-sm text-muted-foreground">Hands-on sessions with AI tools and platforms</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
