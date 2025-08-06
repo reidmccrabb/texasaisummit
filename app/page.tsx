@@ -73,7 +73,7 @@ export default function Home() {
     {
       time: '11:00 AM',
       title: 'Track Sessions Begin',
-      description: 'Split into Builder (Software) and Business (Real World AI) tracks',
+      description: 'Split into Software and Physical AI tracks',
     },
     {
       time: '12:00 PM',
@@ -88,7 +88,7 @@ export default function Home() {
     {
       time: '2:00 PM',
       title: 'Track Session 3',
-      description: 'Deep dive sessions in both Builder and Business tracks',
+      description: 'Deep dive sessions in both Software and Physical tracks',
     },
     {
       time: '3:00 PM',
@@ -382,7 +382,7 @@ export default function Home() {
             <span className="text-sm font-semibold text-primary uppercase tracking-wide">Conference Tracks</span>
             <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 text-foreground">Two Tracks, One Vision</h2>
             <p className="text-xl text-muted-foreground">
-              Choose your path or mix and match between builders and business leaders
+              Choose your path or mix and match between software and physical world applications
             </p>
           </div>
 
@@ -393,8 +393,8 @@ export default function Home() {
                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-primary/10 to-primary/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Cpu className="h-10 w-10 text-primary" />
                 </div>
-                <CardTitle className="text-2xl font-semibold text-foreground">Track 1 - Builder</CardTitle>
-                <CardDescription className="text-lg text-muted-foreground">Software & AI Development</CardDescription>
+                <CardTitle className="text-2xl font-semibold text-foreground">Software Track</CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">AI Development & Implementation</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-4">
@@ -424,8 +424,8 @@ export default function Home() {
                 <div className="w-20 h-20 mx-auto mb-6 bg-gradient-to-br from-destructive/10 to-destructive/20 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                   <Building2 className="h-10 w-10 text-destructive" />
                 </div>
-                <CardTitle className="text-2xl font-semibold text-foreground">Track 2 - Business</CardTitle>
-                <CardDescription className="text-lg text-muted-foreground">AI in the Real World</CardDescription>
+                <CardTitle className="text-2xl font-semibold text-foreground">Physical Track</CardTitle>
+                <CardDescription className="text-lg text-muted-foreground">AI in Physical Industries</CardDescription>
               </CardHeader>
               <CardContent className="pb-8">
                 <ul className="space-y-4">
@@ -439,7 +439,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
-                    <span className="text-sm text-muted-foreground">Business strategy and implementation</span>
+                    <span className="text-sm text-muted-foreground">Implementation strategy and planning</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle2 className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
@@ -551,7 +551,7 @@ export default function Home() {
                 <CardHeader className="bg-gradient-to-r from-primary/10 to-primary/5">
                   <CardTitle className="flex items-center gap-2">
                     <Cpu className="h-5 w-5 text-primary" />
-                    Track 1 - Builder (Software)
+                    Software Track
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
@@ -584,7 +584,7 @@ export default function Home() {
                 <CardHeader className="bg-gradient-to-r from-destructive/10 to-destructive/5">
                   <CardTitle className="flex items-center gap-2">
                     <Building2 className="h-5 w-5 text-destructive" />
-                    Track 2 - Business (AI in Real World)
+                    Physical Track
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="p-0">
@@ -595,7 +595,7 @@ export default function Home() {
                     </div>
                     <div className="flex items-center justify-between p-4 border-b border-border/50">
                       <span className="font-medium">2:00 PM</span>
-                      <span className="text-sm text-muted-foreground">Session 2: Business Strategy</span>
+                      <span className="text-sm text-muted-foreground">Session 2: Implementation Strategy</span>
                     </div>
                     <div className="flex items-center justify-between p-4 border-b border-border/50">
                       <span className="font-medium">3:00 PM</span>
