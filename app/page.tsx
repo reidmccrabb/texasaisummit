@@ -204,12 +204,10 @@ export default function Home() {
                 Register Now
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
-              <Button variant="outline" size="lg" className="w-full sm:w-auto text-base sm:text-lg px-8 sm:px-10 py-4 sm:py-6 border-2 backdrop-blur-sm bg-background/50 hover:bg-background/80 transition-all duration-300" asChild>
-                <a href="#schedule" className="flex items-center justify-center">
-                  <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                  View Schedule
-                </a>
-              </Button>
+              <a href="#schedule" className="inline-flex items-center justify-center rounded-md font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border-input hover:bg-accent hover:text-accent-foreground h-11 px-8 w-full sm:w-auto text-base sm:text-lg sm:px-10 py-4 sm:py-6 border-2 backdrop-blur-sm bg-background/50 hover:bg-background/80 duration-300">
+                <Calendar className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+                View Schedule
+              </a>
             </div>
             
             {/* Early bird notice */}
